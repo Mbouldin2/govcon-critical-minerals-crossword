@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Mining Crossword Puzzle</title>
+</head>
+<body>
+    <h1>Gold Mining & Extraction Processes Crossword Puzzle</h1>
+    <p>Find the words related to gold mining and extraction processes:</p>
+    <div id="puzzle"></div>
+    <script>
+        // Simple crossword puzzle implementation
+        const words = ['GOLD', 'MINING', 'EXTRACTION', 'ORE', 'FLOTATION', 'CRUSHING', 'SMELTING', 'REFINING', 'DREDGING', 'PANNING'];
+        function createPuzzle(){
+            // Here you would normally have a complex logic to create the crossword
+            let puzzleHtml = '<table>'; 
+            for (let i = 0; i < 10; i++) {
+                puzzleHtml += '<tr>'; 
+                for (let j = 0; j < 10; j++) {
+                    puzzleHtml += '<td> </td>';  
+                }
+                puzzleHtml += '</tr>';  
+            }
+            puzzleHtml += '</table>';
+            document.getElementById('puzzle').innerHTML = puzzleHtml;
+        }
+        createPuzzle();
+    </script>
+</body>
+</html>
